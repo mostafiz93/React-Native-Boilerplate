@@ -7,13 +7,15 @@
 
 import { StyleSheet } from 'react-native';
 
+import { primaryColor, secondaryColor } from '../const/colors';
+
 export default StyleSheet.create({
   viewStyle: {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    backgroundColor: '#222222',
-    height: 90,
+    backgroundColor: primaryColor,
+    height: 55,
     elevation: 0,
     position: 'relative',
   },
@@ -22,8 +24,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'Roboto',
     fontSize: 20,
-    color: 'white',
-    marginBottom: 35,
+    color: secondaryColor,
   },
   menuButton: {
     height: 30,
@@ -32,7 +33,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    bottom: 47,
     left: 15,
   },
   notificationButton: {
@@ -42,7 +42,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    bottom: 47,
     right: 15,
   },
 });

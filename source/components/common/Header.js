@@ -11,6 +11,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import PropTypes from 'prop-types';
 
 import Styles from '../../styles/Header';
+import { secondaryColor } from '../../const/colors';
 
 const Header = (props) => (
   <View style={Styles.viewStyle}>
@@ -18,7 +19,7 @@ const Header = (props) => (
       onPress={() => props.navigation.navigate('DrawerOpen')}
       style={Styles.menuButton}
     >
-      <Icon name="md-menu" size={25} color="white" align="right" />
+      <Icon name="md-menu" size={25} color={secondaryColor} align="right" />
     </TouchableOpacity>
 
     <Text style={Styles.textStyle}>{props.headerText}</Text>
@@ -27,7 +28,7 @@ const Header = (props) => (
       onPress={() => props.navigation.navigate('Notification')}
       style={Styles.notificationButton}
     >
-      <Icon name="md-notifications" size={25} color="#FFF" align="right" />
+      <Icon name="md-notifications" size={25} color={secondaryColor} align="right" />
     </TouchableOpacity>
   </View>
 );
