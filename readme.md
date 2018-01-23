@@ -1,3 +1,4 @@
+
 **Initialise Project:**    
 -
 - Clone project 
@@ -7,42 +8,42 @@
 
 **Directory  Structure**  
 -   
-- Source 
-	- Components
-	    -  Common
-	        - Drawer
-            - Header
-            - Layouts
-            - Lists
-            - Cards
-        - ScreenA
+- source 
+	- components
+	    -  common
+	        - drawer
+            - header
+            - layouts
+            - lists
+            - cards
+        - screenA
              - ScreenComponentA1 
              - ScreenComponentA2
-        - ScreenB
+        - screenB
              - ScreenComponentB1 
              - ScreenComponentB2
-       - Assets
-		- Images
-		- Icons
-		- Fonts
-	- Const
-	- Config
-	- Actions
-	- Reducers
-	- Styles
-		- Common
-		- Buttons
-		- Layouts
-		- Drawers
-		- Cards
-		- Lists
-- Android
-- iOS
+     - assets
+		- images
+		- icons
+		- fonts
+	- const
+	- config
+	- actions
+	- reducers
+	- styles
+		- common
+		- buttons
+		- layouts
+		- drawers
+		- cards
+		- lists
+- App.js
+- index.js
 
-**Scaling**
+**Layout Scaling**
 - 
-- [ModerteScale](https://blog.solutotlv.com/size-matters/)
-- PixelRatio || ReactNatice Official 
+- [react-native-size-matters](https://github.com/nirsky/react-native-size-matters)
+- [PixelRatio](https://facebook.github.io/react-native/docs/pixelratio.html) 
 
 
 
