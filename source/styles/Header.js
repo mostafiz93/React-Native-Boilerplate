@@ -8,6 +8,7 @@
 import { StyleSheet } from 'react-native';
 
 import { primaryColor, secondaryColor } from '../const/colors';
+import { scale, moderateScale, verticalScale } from '../helpers/Scale';
 
 export default StyleSheet.create({
   viewStyle: {
@@ -15,33 +16,30 @@ export default StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     backgroundColor: primaryColor,
-    height: 55,
-    elevation: 0,
+    height: verticalScale(55),
     position: 'relative',
   },
   textStyle: {
     justifyContent: 'flex-start',
     textAlign: 'center',
     fontFamily: 'Roboto',
-    fontSize: 20,
+    fontSize: moderateScale(18),
     color: secondaryColor,
   },
   menuButton: {
-    height: 30,
-    width: 30,
-    borderRadius: 30,
+    height: verticalScale(30),
+    width: scale(30),
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    left: 15,
+    left: moderateScale(10),
   },
   notificationButton: {
-    height: 30,
-    width: 30,
-    borderRadius: 30,
+    height: verticalScale(30),
+    width: scale(30),
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    right: 15,
+    right: moderateScale(10),
   },
 });
