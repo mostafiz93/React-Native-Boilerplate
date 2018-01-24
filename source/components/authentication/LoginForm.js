@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 import Styles from '../../styles/Authentication';
+import Scale, { moderateScale } from '../../helpers/Scale';
 
 export default class LogIn extends Component {
   constructor(props) {

@@ -11,6 +11,7 @@ import { StackNavigator, DrawerNavigator } from 'react-navigation';
 import SplashScreen from './source/components/SplashScreen';
 import Home from './source/components/Home';
 import Login from './source/components/authentication/Login';
+import SideMenu from './source/components/common/SideMenu';
 
 const { width } = Dimensions.get('window');
 
@@ -38,7 +39,7 @@ const RNBoilerplate = StackNavigator(
       name: 'Drawer',
       screen: DrawerNavigator(DrawerRoutes, {
         drawerWidth: width * 0.7,
-        // contentComponent: SideMenu,
+        contentComponent: SideMenu,
       }),
     },
     ...Stack,
