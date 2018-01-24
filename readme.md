@@ -1,8 +1,8 @@
 
 **Initialise Project:**    
 -
-- Clone project 
-- Make sure you have eslint globally, run ``npm install eslint eslint-config-airbnb --global`` if you don't have.  
+- Clone project
+<!-- - Make sure you have eslint globally, run ``npm install eslint eslint-config-airbnb --global`` if you don't have.   -->
 - Run ``npm install`` 
 - Run ``react-native link`` 
 
