@@ -7,7 +7,7 @@
 
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '../helpers/Scale';
-import { primaryColor } from '../const/colors';
+import { primaryColor } from '../constants/colors';
 
 export default StyleSheet.create({
   container: {

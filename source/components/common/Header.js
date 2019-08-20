@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import PropTypes from 'prop-types';
 
 import Styles from '../../styles/Header';
-import { secondaryColor } from '../../const/colors';
+import { secondaryColor } from '../../constants/colors';
 import { moderateScale } from '../../helpers/Scale';
 
 const Header = (props) => (
