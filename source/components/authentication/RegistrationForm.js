@@ -21,7 +21,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 import Styles from '../../styles/Authentication';
-import { MONTHS } from '../../const/strings';
+import { MONTHS } from '../../constants/strings';
 
 export default class RegistrationForm extends Component {
   constructor(props) {

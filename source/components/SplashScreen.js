@@ -6,8 +6,9 @@
  */
 
 import React, { Component } from 'react';
-import { View, Image, AsyncStorage } from 'react-native';
-import { NavigationActions } from 'react-navigation';
+import { View, Image } from 'react-native';
+
+import AsyncStorage from '@react-native-community/async-storage';
 import Spinner from 'react-native-spinkit';
 import PropTypes from 'prop-types';
 
@@ -16,11 +17,11 @@ import Styles from '../styles/SplashScreen';
 export default class SplashScreen extends Component {
   static navigationOptions = {
     header: null,
-    drawerLockMode: 'locked-closed',
+    drawerLockMode: 'locked-closed'
   };
 
   static navigationOptions = {
-    header: null,
+    header: null
   };
 
   constructor(props) {
@@ -38,23 +39,9 @@ export default class SplashScreen extends Component {
       const value = await AsyncStorage.getItem('user');
 
       if (value != null) {
-        const resetAction = NavigationActions.reset({
-          index: 0,
-          actions: [NavigationActions.navigate({ routeName: 'Home' })],
-        });
-
-        setTimeout(() => {
-          this.props.navigation.dispatch(resetAction);
-        }, 2000);
+        this.props.navigation.navigate('App');
       } else {
-        const resetAction = NavigationActions.reset({
-          index: 0,
-          actions: [NavigationActions.navigate({ routeName: 'Login' })],
-        });
-
-        setTimeout(() => {
-          this.props.navigation.dispatch(resetAction);
-        }, 2000);
+        this.props.navigation.navigate('Auth');
       }
     } catch (error) {
       alert('Opss! Async Storage Error!');
@@ -69,7 +56,7 @@ export default class SplashScreen extends Component {
           style={Styles.splashScreenImage}
         />
         <View style={Styles.splashScreenContainer}>
-          <Spinner isVisible size={50} type="ThreeBounce" color="#26d9fd" />
+          <Spinner isVisible size={50} type='ThreeBounce' color='#26d9fd' />
         </View>
       </View>
     );
@@ -77,5 +64,5 @@ export default class SplashScreen extends Component {
 }
 
 SplashScreen.propTypes = {
-  navigation: PropTypes.object.isRequired,
+  navigation: PropTypes.object.isRequired
 };

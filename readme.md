@@ -26,7 +26,7 @@
 		- images
 		- icons
 		- fonts
-	- const
+	- constants
 	- config
 	- actions
 	- reducers

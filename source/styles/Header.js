@@ -7,7 +7,7 @@
 
 import { StyleSheet } from 'react-native';
 
-import { primaryColor, secondaryColor } from '../const/colors';
+import { primaryColor, secondaryColor } from '../constants/colors';
 import { scale, moderateScale, verticalScale } from '../helpers/Scale';
 
 export default StyleSheet.create({
