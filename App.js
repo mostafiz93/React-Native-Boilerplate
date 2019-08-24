@@ -5,51 +5,12 @@
  * https://github.com/mostafiz93/RNBoilerplate
  */
 
-import { AppRegistry, Dimensions } from 'react-native';
-import { StackNavigator, DrawerNavigator } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
 
-import SplashScreen from './source/components/SplashScreen';
-import Home from './source/components/Home';
-import Login from './source/components/authentication/Login';
-import SideMenu from './source/components/common/SideMenu';
+import { switchNavigator } from './source/navigations/switchNavigator';
 
-const { width } = Dimensions.get('window');
+console.disableYellowBox = true;
 
-const Stack = {
-  SplashScreen: {
-    screen: SplashScreen,
-  },
-  Home: {
-    screen: Home,
-  },
-  Login: {
-    screen: Login,
-  },
-};
+const App = createAppContainer(switchNavigator);
 
-const DrawerRoutes = {
-  SplashScreen: {
-    screen: StackNavigator(Stack, { initialRouteName: 'SplashScreen' }),
-  },
-};
-
-const RNBoilerplate = StackNavigator(
-  {
-    Drawer: {
-      name: 'Drawer',
-      screen: DrawerNavigator(DrawerRoutes, {
-        drawerWidth: width * 0.7,
-        contentComponent: SideMenu,
-      }),
-    },
-    ...Stack,
-  },
-  {
-    drawerWidth: 300,
-    headerMode: 'none',
-  },
-);
-
-export default RNBoilerplate;
-
-AppRegistry.registerComponent('RNBoilerplate', () => RNBoilerplate);
+export default App;
