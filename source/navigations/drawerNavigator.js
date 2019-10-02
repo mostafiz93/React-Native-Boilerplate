@@ -1,5 +1,5 @@
 import { Dimensions } from 'react-native';
-import { createDrawerNavigator } from 'react-navigation';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import SideMenu from '../components/common/SideMenu';
 import { AppStack } from './stackNavigator';

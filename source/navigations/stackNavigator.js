@@ -1,4 +1,4 @@
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import { stackNavigatorConfig } from '../configs/navigationConfig';
 
 import SplashScreen from '../components/SplashScreen';
